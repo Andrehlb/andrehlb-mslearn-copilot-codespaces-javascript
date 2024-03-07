@@ -7,7 +7,8 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "build-gh": "parcel build --public-url '/andrehlb-mslearn-copilot-codespaces-javascript/'",
+    "build-gh": "parcel build --public-url ./",
+    "//": "build-gh: parcel build --public-url '/andrehlb-mslearn-copilot-codespaces-javascript/'",
     "//": "build-gh: parcel build --public-url './'",
     "//": "build-gh: parcel build --public-url 'https://Andrehlb.github.io/andrehlb-mslearn-copilot-codespaces-javascript'",
     "//": "build-gh: parcel build --public-url 'https://{github-username}.github.io/{repo-name}'",
