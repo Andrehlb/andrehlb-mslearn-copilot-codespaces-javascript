@@ -23,7 +23,7 @@ import PropTypes from "prop-types";
 //import image from "../images/woman-with-tablet.jpg";
 import image from "../images/andrehlb_fashion_collaboration_of_Kalvin_Klein_and_Jacquems_man.png";
 
-const imageAltText = "Adult female in office setting leaning against a glass wall while holding a platinum Microsoft Surface Pro 7 in tablet mode preparing to write with Microsoft Surface Pen";
+const imageAltText = "Stylish adult male wearing Calvin Klein standing up while preparing to photo session";
 
 const Home = ({ name, title }) => {
   return (
