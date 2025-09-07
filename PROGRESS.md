@@ -1,8 +1,8 @@
 # 🎮 Projeto Seção de Jogos - Controle de Progresso
 
 ## 📊 Status Atual: EM ANDAMENTO
-**Última atualização:** [Data atual]
-**Próximo passo:** Criar sistema Clash Royale
+**Última atualização:** 07 Set 2025
+**Próximo passo:** Criar arquivo clash.css
 
 ---
 
@@ -12,48 +12,55 @@
 - [x] Criada pasta `src/games/`
 - [x] Criada pasta `src/games/individual-games/`
 - [x] Subpastas: memory-game, tic-tac-toe, snake-game, puzzle-game
+- [x] Criada pasta `src/games/individual-games/clash-royale/`
 - [x] Arquivo CSS criado: `src/games/games.css`
+
+### Passo 2: Sistema Clash Royale ✅ (HTML)
+- [x] Arquivo HTML criado: `src/games/individual-games/clash-royale/index.html`
+- [x] Estrutura básica definida
+- [x] Links para CSS e JS configurados
 
 ### Arquivos Criados:
 - `src/games/games.css` ✅ (Estilos completos)
+- `src/games/individual-games/clash-royale/index.html` ✅ (Estrutura básica)
 
 ---
 
 ## 🔄 EM ANDAMENTO
 
-### Passo 2: Sistema Clash Royale
-**Objetivo:** Sistema de acompanhamento de Guerra de Clãs
-**Funcionalidades:**
-- Lista de clanmates
-- Contador de batalhas (0-4 por dia)
-- Pontuação individual
-- Status visual (completo/incompleto)
-- Data da guerra semanal
+### Item Atual: Criação do arquivo clash.css
+**Objetivo:** Estilos para o sistema Clash Royale
+**Funcionalidades a estilizar:**
+- Header com título e informações da guerra
+- Cards dos membros do clã
+- Estatísticas visuais
+- Tema gaming (cores escuras, efeitos)
 
-**Arquivos a criar:**
-- `src/games/individual-games/clash-royale/index.html`
-- `src/games/individual-games/clash-royale/clash.css`
-- `src/games/individual-games/clash-royale/clash.js`
+**Problemas identificados no HTML:**
+- Path do CSS incorreto: `../../styles.css` → deveria ser `../../../styles.css`
+- Script incorreto: `../../games.js` → deveria ser `clash.js`
 
 ---
 
 ## 📋 PENDENTE
 
-### Passo 3: Menu de Navegação
-- [ ] Modificar `index.html` principal
-- [ ] Adicionar link "Games" no menu
-- [ ] Testar navegação
+### Próximos itens (ordem):
+1. **AGORA:** Criar `clash.css`
+2. **DEPOIS:** Criar `clash.js` com integração da API Supercell
+3. **DEPOIS:** Decisão sobre novo repositório
+4. **DEPOIS:** Migração dos arquivos
+5. **DEPOIS:** Linkagem no site principal
 
-### Passo 4: Outros Jogos
+### Outros Jogos (Futuro):
 - [ ] Jogo da Memória
 - [ ] Jogo da Velha
 - [ ] Snake Game
 - [ ] Puzzle Deslizante
 
-### Passo 5: Página Principal dos Jogos
-- [ ] Criar `src/games/index.html`
-- [ ] Adicionar `src/games/games.js`
-- [ ] Integrar todos os jogos
+### Menu de Navegação (Futuro):
+- [ ] Modificar `index.html` principal
+- [ ] Adicionar link "Games" no menu
+- [ ] Testar navegação
 
 ---
 
@@ -61,24 +68,25 @@
 ```bash
 mkdir src/games
 mkdir src/games/individual-games
-mkdir src/games/individual-games/memory-game
-mkdir src/games/individual-games/tic-tac-toe
-mkdir src/games/individual-games/snake-game
-mkdir src/games/individual-games/puzzle-game
+mkdir src/games/individual-games/clash-royale
+# + outras subpastas dos jogos
 ```
 
 ---
 
-## 🎯 PRÓXIMOS PASSOS IMEDIATOS
-1. **AGORA:** Criar pasta clash-royale
-2. **AGORA:** Desenvolver sistema de guerra de clãs
-3. **Depois:** Continuar com outros jogos
+## 🎯 PRÓXIMO PASSO IMEDIATO
+**Criar arquivo clash.css** na pasta `src/games/individual-games/clash-royale/`
 
 ---
 
-## 💡 NOTAS IMPORTANTES
+## ⚠️ CORREÇÕES NECESSÁRIAS NO HTML
+1. Corrigir path do CSS: `../../../styles.css` (3 níveis acima)
+2. Corrigir script: `clash.js` (arquivo local)
+
+---
+
+## 💡 DECISÕES TOMADAS
 - Usuario prefere direção única (sem opções múltiplas)
 - Um passo de cada vez
-- Clash Royale tem prioridade sobre outros jogos
-- Sistema deve mostrar batalhas diárias (0-4)
-- Guerra acontece semanalmente
+- Clash Royale integrado com API da Supercell (dados reais)
+- Novo repositório será criado depois (andrehlb-games-platform)
